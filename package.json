@@ -1,6 +1,6 @@
 {
-  "name": "remove-all-comments",
-  "displayName": "Remove All Comments",
+  "name": "smarter-remove-all-comments",
+  "displayName": "Smarter Remove All Comments",
   "description": "A smarter VS Code extension to remove all comments from your codebase while preserving useful ones like eslint ones. Streamline your projects with ease!",
   "version": "1.0.0",
   "publisher": "chicco-carone",
