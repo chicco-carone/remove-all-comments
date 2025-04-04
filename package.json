@@ -1,0 +1,52 @@
+{
+  "name": "remove-all-comments",
+  "displayName": "remove-all-comments",
+  "description": "A smarter VS Code extension to remove all comments from your codebase while preserving useful ones like eslint ones. Streamline your projects with ease!",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "icon": "img/icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "remove-all-comments.removeComments",
+        "title": "Remove Comments - Remove all comments from current file"
+      },
+      {
+        "command": "remove-all-comments.removeFolderComments",
+        "title": "Remove Comments - Remove all comments from a folder"
+      },
+      {
+        "command": "remove-all-comments.showModifiedFiles",
+        "title": "Remove Comments - Show recently modified files"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0",
+    "glob": "^11.0.1",
+    "typescript": "^5.8.2"
+  }
+}
